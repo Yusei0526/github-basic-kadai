@@ -1,0 +1,38 @@
+/* bodyのフォント種類 */
+body {
+  font-family: "Arial", "Meiryo", sans-serif;
+  text-align: center; /* テキストを中央寄せ */
+}
+
+/* ルート要素のフォントサイズ */
+html {
+  font-size: 20px;
+}
+
+/* 「MY PROFILE」の「M」をスカイブルーに、「P」をピンクに */
+h1::first-letter {
+  color: skyblue;
+}
+h1 span.pink {
+  color: rgb(255, 192, 203);
+}
+/* 名前　血液型　好きな食べ物見出しピンク */
+.pink {
+  color: rgb(255, 192, 203);
+}
+/* 生年月日　趣味　プログラミングを始めた理由 */
+.blue {
+  color: skyblue;
+}
+/* h1の装飾 */
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem; /* ルート要素の2倍 */
+  letter-spacing: 1.2em; /*　文字の大きさに対して1.2倍 */
+  text-shadow: 2px 2px 4px #000000; /* 影の大きさや色は自由 */
+  border-bottom: 3px solid rgb(115, 115, 114); /* 下に3pxの実線 */
+}
+/* 名前～血液型までの要素をid属性basicのdivタグで囲む */
+#basic > p {
+  font-weight: bold; /* 通常の太さ */
+}
